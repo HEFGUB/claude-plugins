@@ -10,6 +10,8 @@ choose.
 /plugin install wasabi@wasabi
 ```
 
+It needs [Bun](https://bun.sh) on your machine for its compile check.
+
 See [plugins/wasabi](plugins/wasabi/README.md) for signing in and what the
 plugin carries.
 

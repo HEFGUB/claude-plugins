@@ -13,6 +13,10 @@ as you, with your profiles and teams.
 
 ## Install
 
+You need [Bun](https://bun.sh): the plugin's compile check runs with it.
+Without it the plugin still works, but Claude Code shows a hook error after
+every artifact write.
+
 ```text
 /plugin marketplace add HEFGUB/claude-plugins
 /plugin install wasabi@wasabi
@@ -50,7 +54,7 @@ authentication, then authenticate and choose the other one.
 - `/wasabi:build`, the authoring loop and the things that bite;
 - `/wasabi:status`;
 - a hook that stops on compiler errors after `write_artifact` or
-  `patch_artifact` (it runs with `bun`).
+  `patch_artifact` (it runs with Bun).
 
 ## Developing it
 
