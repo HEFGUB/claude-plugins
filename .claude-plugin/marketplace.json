@@ -1,0 +1,14 @@
+{
+  "name": "wasabi",
+  "description": "Claude Code plugins for wasabi: build business apps in the Studio and work cases in the Runtime.",
+  "owner": {
+    "name": "wasabi"
+  },
+  "plugins": [
+    {
+      "name": "wasabi",
+      "source": "./plugins/wasabi",
+      "description": "Build and run business apps on wasabi from Claude Code: sign in with wasabi, pick an organization, and author forms, workflows and decisions."
+    }
+  ]
+}

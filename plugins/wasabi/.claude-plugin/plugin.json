@@ -1,0 +1,15 @@
+{
+  "name": "wasabi",
+  "version": "0.2.0",
+  "description": "Build and run business apps on wasabi from Claude Code: sign in with wasabi, pick an organization, build in the Studio and work cases in the Runtime.",
+  "author": { "name": "wasabi" },
+  "license": "SEE LICENSE IN LICENSE",
+  "userConfig": {
+    "domain": {
+      "type": "string",
+      "title": "wasabi installation domain",
+      "description": "Your installation's domain, e.g. example.com: the Studio is studio.<domain> and the Runtime app.<domain>.",
+      "required": true
+    }
+  }
+}

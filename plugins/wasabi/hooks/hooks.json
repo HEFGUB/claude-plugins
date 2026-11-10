@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "mcp__.*studio.*__(write|patch)_artifact",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bun ${CLAUDE_PLUGIN_ROOT}/hooks/diagnostics.ts"
+          }
+        ]
+      }
+    ]
+  }
+}

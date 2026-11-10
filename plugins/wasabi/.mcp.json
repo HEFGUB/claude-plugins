@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "studio": {
+      "type": "http",
+      "url": "https://studio.${user_config.domain}/mcp"
+    },
+    "runtime": {
+      "type": "http",
+      "url": "https://app.${user_config.domain}/mcp"
+    }
+  }
+}
