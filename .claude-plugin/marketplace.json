@@ -8,7 +8,7 @@
     {
       "name": "wasabi",
       "source": "./plugins/wasabi",
-      "description": "Build and run business apps on wasabi from Claude Code: sign in with wasabi, pick an organization, and author forms, workflows and decisions."
+      "description": "Build and run business apps on wasabi from Claude Code: sign in with wasabi, pick an organization, and build forms, workflows, decisions, integrations, reports and dashboards."
     }
   ]
 }

@@ -2,7 +2,7 @@
   "hooks": {
     "PostToolUse": [
       {
-        "matcher": "mcp__.*studio.*__(write|patch)_artifact",
+        "matcher": "mcp__.*studio.*__(write|patch|create)_artifact",
         "hooks": [
           {
             "type": "command",

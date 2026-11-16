@@ -4,9 +4,10 @@
  * repository root; modifying or redistributing a changed copy is not.
  */
 
-// After `write_artifact` or `patch_artifact`: if the compiler found an ERROR in what was written,
-// hand it back to Claude (exit 2, stderr) so the next step is fixing it, not
-// building on a broken artifact. Warnings and a clean write pass silently.
+// After `create_artifact`, `write_artifact` or `patch_artifact`: if the
+// compiler found an ERROR in what was written, hand it back to Claude (exit 2,
+// stderr) so the next step is fixing it, not building on a broken artifact.
+// Warnings and a clean write pass silently.
 // Self-contained on purpose: an installed plugin is copied out of the repo.
 
 interface Diagnostic {

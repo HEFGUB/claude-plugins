@@ -4,7 +4,8 @@ Build and run business apps on wasabi from Claude Code. wasabi has one MCP
 server per platform app, and the plugin connects to two:
 
 - **Studio** (`https://studio.<domain>/mcp`): building an app, its artifacts,
-  workflows and decisions, compiled, published and released;
+  workflows, decisions, integrations, reports and dashboards, compiled,
+  published and released;
 - **Runtime** (`https://app.<domain>/mcp`): working in the released apps,
   starting and working cases, reading records.
 
@@ -51,10 +52,11 @@ authentication, then authenticate and choose the other one.
 
 - the `studio` and `runtime` MCP servers, each with `whoami` and
   `platform_guide`, and the Studio's `build_app` prompt;
-- `/wasabi:build`, the authoring loop and the things that bite;
+- `/wasabi:build`, the tool for each step of the authoring loop and what to
+  read in each answer (the rules themselves come from the servers);
 - `/wasabi:status`;
-- a hook that stops on compiler errors after `write_artifact` or
-  `patch_artifact` (it runs with Bun).
+- a hook that stops on compiler errors after `create_artifact`,
+  `write_artifact` or `patch_artifact` (it runs with Bun).
 
 ## Developing it
 
@@ -66,3 +68,8 @@ in the debug log).
 Bump `version` in `.claude-plugin/plugin.json` for every change you want
 installed copies to pick up: a pinned version is how Claude Code decides
 there is an update.
+
+The platform repo keeps a copy of every tool name the skills and the hook
+name, and its tests fail when one is renamed or removed; a change there is
+the signal to change this plugin too. New tools are not caught that way:
+when the servers gain an area, add it to `/wasabi:build`.

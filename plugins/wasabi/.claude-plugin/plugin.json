@@ -1,6 +1,6 @@
 {
   "name": "wasabi",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Build and run business apps on wasabi from Claude Code: sign in with wasabi, pick an organization, build in the Studio and work cases in the Runtime.",
   "author": { "name": "wasabi" },
   "license": "SEE LICENSE IN LICENSE",

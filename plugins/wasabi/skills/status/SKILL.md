@@ -6,7 +6,9 @@ description: Show which wasabi installation and organization each wasabi server 
 Call `whoami` on each wasabi server this session has, the Studio's and the
 Runtime's, and report in one short paragraph each: the app, the installation
 address, the organization (name and slug), the person, their profiles and
-their teams.
+their teams. If it answers a `supportVisit`, say that this is a wasabi support
+visit to a customer's organization and when it ends: the connection ends with
+it.
 
 If the two name different organizations, say so plainly: building in one and
 running cases in another is almost never what the person wants, and they fix
